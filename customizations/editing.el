@@ -12,6 +12,17 @@
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol))
 
+;; Cyrillic environment by toggle-input-method
+(setq default-input-method "russian-computer")
+
+;; Swith between buffers in multiframe window
+;; substitute for C-x o or C-u [number] C-x o
+(global-set-key (kbd "C-x <down>") 'previous-multiframe-window)
+(global-set-key (kbd "C-x <up>") 'next-multiframe-window)
+
+;; Show column number
+(column-number-mode t)
+
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
 
