@@ -30,6 +30,9 @@
 ;; Cider
 ;;;;
 
+;; Enable which-key for Cider
+(add-hook 'cider-mode-hook 'which-key-mode)
+
 ;; provides minibuffer documentation for the code you're typing into the repl
 (add-hook 'cider-mode-hook 'eldoc-mode)
 

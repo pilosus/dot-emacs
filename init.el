@@ -26,7 +26,7 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-;; Define he following variables to remove the compile-log warnings
+;; Define the following variables to remove the compile-log warnings
 ;; when defining ido-ubiquitous
 ;; (defvar ido-cur-item nil)
 ;; (defvar ido-default-item nil)
@@ -51,6 +51,7 @@
 
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
+    ;; https://docs.cider.mx/cider/0.26/usage/cider_mode.html
     cider
 
     ;; allow ido usage in as many contexts as possible. see
@@ -71,6 +72,11 @@
 
     ;; edit html tags like sexps
     tagedit
+
+    ;; display the key bindings following your currently entered 
+    ;; incomplete command in a popup
+    ;; https://github.com/justbur/emacs-which-key
+    which-key
 
     ;; git integration
     magit))
@@ -145,7 +151,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (which-key magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
