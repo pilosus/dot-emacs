@@ -81,3 +81,32 @@
     (quit nil)))
 
 (setq electric-indent-mode nil)
+
+;;
+;; Clipboard settings
+;;
+
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Clipboard.html#Clipboard
+(setq ;; makes killing/yanking interact with the clipboard
+      x-select-enable-clipboard t
+
+      ;; Put selected text in X application to primary selection buffer
+      ;; Pro: text selected somewhere with the mouse can be copied in emacs
+      ;; Contra: text selected ("marked") in emacs overrides clipboard, 
+      ;; so that when you marks a region to override with the clipboard, 
+      ;; the clipboard changes to what's been just selected.
+      ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Primary-Selection.html#Primary-Selection
+      ;;x-select-enable-primary t
+
+      ;; Save clipboard strings into kill ring before replacing them.
+      ;; When one selects something in another program to paste it into Emacs,
+      ;; but kills something in Emacs before actually pasting it,
+      ;; this selection is gone unless this variable is non-nil
+      save-interprogram-paste-before-kill t
+
+      ;; Shows all options when running apropos. For more info,
+      ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Apropos.html
+      apropos-do-all t
+
+      ;; Mouse yank commands yank at point instead of at click.
+      mouse-yank-at-point t)
