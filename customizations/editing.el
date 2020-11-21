@@ -12,6 +12,9 @@
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol))
 
+;; Remove region upon yank/input
+(delete-selection-mode 1)
+
 ;; Cyrillic environment by toggle-input-method
 (setq default-input-method "russian-computer")
 
