@@ -12,6 +12,11 @@
         try-complete-lisp-symbol-partially
         try-complete-lisp-symbol))
 
+
+;; Remove trailing whitespaces upon file save
+;; https://www.emacswiki.org/emacs/DeletingWhitespace#toc3
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Remove region upon yank/input
 (delete-selection-mode 1)
 

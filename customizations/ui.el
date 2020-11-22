@@ -31,6 +31,10 @@
 (add-to-list 'load-path "~/.emacs.d/themes")
 (load-theme 'tomorrow-night-bright t)
 
+;; set linum mode color to make it more contrast
+;; see more with M-x list-colors-display
+(set-face-foreground 'linum "light gray")
+
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
 
