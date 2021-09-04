@@ -73,13 +73,16 @@
     ;; edit html tags like sexps
     tagedit
 
-    ;; display the key bindings following your currently entered 
+    ;; display the key bindings following your currently entered
     ;; incomplete command in a popup
     ;; https://github.com/justbur/emacs-which-key
     which-key
 
     ;; git integration
-    magit))
+    magit
+
+    ;; refactoring for clojure-mode and cider
+    clj-refactor))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -105,7 +108,7 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -151,7 +154,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (which-key magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (clj-refactor markdown-mode yaml-mode which-key magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
