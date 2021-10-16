@@ -2,6 +2,10 @@
 ;; Clojure
 ;;;;
 
+;; Enable clj-kondo linter with Flycheck
+(require 'flycheck-clj-kondo)
+(add-hook 'clojure-mode-hook 'flycheck-mode)
+
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
@@ -57,7 +61,6 @@
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
-
 
 ;; key bindings
 ;; these help me out with the way I usually develop web apps
