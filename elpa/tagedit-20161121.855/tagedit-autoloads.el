@@ -1,4 +1,4 @@
-;;; tagedit-autoloads.el --- automatically extracted autoloads
+;;; tagedit-autoloads.el --- automatically extracted autoloads  -*- lexical-binding: t -*-
 ;;
 ;;; Code:
 
@@ -9,112 +9,50 @@
 ;;;### (autoloads nil "tagedit" "tagedit.el" (0 0 0 0))
 ;;; Generated autoloads from tagedit.el
 
-(autoload 'tagedit-add-paredit-like-keybindings "tagedit" "\
+(autoload 'tagedit-add-paredit-like-keybindings "tagedit" nil t nil)
 
+(autoload 'tagedit-add-experimental-features "tagedit" nil nil nil)
 
-\(fn)" t nil)
-
-(autoload 'tagedit-add-experimental-features "tagedit" "\
-
-
-\(fn)" nil nil)
-
-(autoload 'tagedit-disable-experimental-features "tagedit" "\
-
-
-\(fn)" nil nil)
+(autoload 'tagedit-disable-experimental-features "tagedit" nil nil nil)
 
 (autoload 'tagedit-goto-tag-content "tagedit" "\
-Goto start of content within current tag.
+Goto start of content within current tag." t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-insert-exclamation-mark "tagedit" nil t nil)
 
-(autoload 'tagedit-insert-exclamation-mark "tagedit" "\
+(autoload 'tagedit-maybe-insert-slash "tagedit" nil t nil)
 
+(autoload 'tagedit-kill "tagedit" nil t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-forward-slurp-tag "tagedit" nil t nil)
 
-(autoload 'tagedit-maybe-insert-slash "tagedit" "\
+(autoload 'tagedit-forward-barf-tag "tagedit" nil t nil)
 
+(autoload 'tagedit-kill-attribute "tagedit" nil t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-toggle-multiline-tag "tagedit" nil t nil)
 
-(autoload 'tagedit-kill "tagedit" "\
+(autoload 'tagedit-raise-tag "tagedit" nil t nil)
 
+(autoload 'tagedit-splice-tag "tagedit" nil t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-split-tag "tagedit" nil t nil)
 
-(autoload 'tagedit-forward-slurp-tag "tagedit" "\
+(autoload 'tagedit-join-tags "tagedit" nil t nil)
 
+(autoload 'tagedit-convolute-tags "tagedit" nil t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-insert-equal "tagedit" nil t nil)
 
-(autoload 'tagedit-forward-barf-tag "tagedit" "\
+(autoload 'tagedit-insert-quote "tagedit" nil t nil)
 
+(autoload 'tagedit-insert-lt "tagedit" nil t nil)
 
-\(fn)" t nil)
+(autoload 'tagedit-insert-hash "tagedit" nil t nil)
 
-(autoload 'tagedit-kill-attribute "tagedit" "\
+(autoload 'tagedit-insert-dot "tagedit" nil t nil)
 
-
-\(fn)" t nil)
-
-(autoload 'tagedit-toggle-multiline-tag "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-raise-tag "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-splice-tag "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-split-tag "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-join-tags "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-convolute-tags "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-insert-equal "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-insert-quote "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-insert-lt "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-insert-hash "tagedit" "\
-
-
-\(fn)" t nil)
-
-(autoload 'tagedit-insert-dot "tagedit" "\
-
-
-\(fn)" t nil)
-
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "tagedit" '("tagedit-")))
+(register-definition-prefixes "tagedit" '("tagedit-"))
 
 ;;;***
 
