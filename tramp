@@ -1,0 +1,24 @@
+;; -*- emacs-lisp -*- <22/12/18 15:05:05 /home/vitaly/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; Run `M-x tramp-cleanup-all-connections' instead.
+
+(((tramp-file-name "sudo" "root" nil "thinkpad" nil nil nil)
+  ("uname" "Linux 5.15.0-56-generic")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("pipe-buf" 4096)
+  ("remote-shell" "/bin/sh")
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("file-exists" "test -e")
+  ("id" "/bin/id")
+  ("gid-string" "root")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("tmpdir" "/sudo:root@thinkpad:/tmp")
+  ("uid-integer" 0)
+  ("gid-integer" 0)
+  ("readlink" "\\readlink")
+  ("case-insensitive" nil)))
