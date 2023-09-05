@@ -11,4 +11,5 @@ backups
 melpa-stable
 archive-contents
 *.elc
+eln-cache/
 session.*
