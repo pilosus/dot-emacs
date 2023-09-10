@@ -14,3 +14,4 @@ archive-contents
 eln-cache/
 session.*
 tramp
+archive-contents.signed
