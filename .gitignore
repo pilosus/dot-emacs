@@ -15,3 +15,4 @@ eln-cache/
 session.*
 tramp
 archive-contents.signed
+.lsp-session-v1
