@@ -34,6 +34,9 @@
 ;; Cider
 ;;;;
 
+;; Format code with the cljfmt in the buffer before saving it
+(add-hook 'before-save-hook 'cider-format-buffer t t)
+
 ;; Enable which-key for Cider
 (add-hook 'cider-mode-hook 'which-key-mode)
 
