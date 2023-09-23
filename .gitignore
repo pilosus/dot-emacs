@@ -16,3 +16,5 @@ session.*
 tramp
 archive-contents.signed
 .lsp-session-v1
+__pycache__/
+rpc-venv/
