@@ -159,7 +159,7 @@
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
  '(package-selected-packages
-   '(pyenv-mode elpy company lsp-mode go-mode restclient elixir-mode dockerfile-mode slime clj-refactor markdown-mode yaml-mode which-key magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell)))
+   '(terraform-mode pyenv-mode elpy company lsp-mode go-mode restclient elixir-mode dockerfile-mode slime clj-refactor markdown-mode yaml-mode which-key magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
