@@ -11,7 +11,7 @@
 (tool-bar-mode 0)
 
 ;; Show line numbers
-(global-linum-mode)
+(global-display-line-numbers-mode)
 
 ;; You can uncomment this to remove the graphical toolbar at the top. After
 ;; awhile, you won't need the toolbar.
@@ -30,10 +30,6 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 (load-theme 'tomorrow-night-bright t)
-
-;; set linum mode color to make it more contrast
-;; see more with M-x list-colors-display
-(set-face-foreground 'linum "light gray")
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
